@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tratamento de dados parte 2</title>
+</head>
+<body>
+    <script>
+        var nome = window.prompt('Qual é seu nome?')
+         //Pergunta o numero,transforma para 7 casas decimais e troca . por virgula
+         var n1= Number(window.prompt('Digite seu salário'))
+
+        document.writeln(`Olá ${nome} seu nome tem ${nome.length} letras <br>`)
+
+        document.writeln(`Seu nome em letras maiúsculas é: ${nome.toUpperCase()} <br> Em letras minúsculas é: ${nome.toLowerCase()}<br>`)
+
+       /*document.writeln(`O seu salário com 7 casas decimais fica assim: ${n1.tofixed(7).replace('.', ',')}`)*/
+        //Faz transformmações monetárias
+        document.writeln(`Seu salário em Reais é: ${n1.toLocaleString('pt-br', {style: 'currency', currency:'BRL'})}<br>`)
+        var n2 = n1 / 5.71
+        document.writeln(`Seu salário em Dolar é: ${n2.toLocaleString('pt-br', {style: 'currency', currency:'USD'})}<br>`)
+        var n3 = n1/ 6.19
+        document.writeln(`Seu salário em Euro é: ${n3.toLocaleString('pt-br', {style: 'currency', currency:'EUR'})}`)
+    </script>
+</body>
+</html>
+<div id="Resultado">
+            
+    <h2 class="Titulos">Resultado:</h2>
+    <input type="Dolar" id="Input">
+</div>

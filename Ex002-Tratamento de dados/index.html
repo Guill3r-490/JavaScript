@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tratamento de Dados</title>
+    <style>
+        h1{
+            color: white;
+            font: normal 20pt Arial;
+        }
+        body{
+            background-color: rgb(105, 105, 173);
+        }
+            
+    </style>
+</head>
+<body>
+    <h1>Olá, mundo!</h1>
+    <p>Jesus salva</p>
+    <script>
+        var nome= window.prompt('Qual é seu nome?')
+       var sobrenome= window.prompt('Qual é seu sobrenome?')
+       window.alert(`Prazer te  conhecer ${nome} ${sobrenome}`)
+       /*a crase é usada para template string*/
+       var n0 = nome + sobrenome 
+       window.alert(n0.length)
+       window.alert(n0.toUpperCase())
+       window.alert(n0.toLowerCase())
+
+       var n1= Number.parseFloat( window.prompt('DIgite um número:'))
+       var n2 = Number(window.prompt('Digite outro número:'))
+
+       var n3 = n1+n2
+
+       window.alert('A soma dos valores é ' + n3)
+
+       /* o window.prompt apenas retona valores como string mesmo que você digite um numero*/
+       /* Para fazer a conversão de uma string para um numero inteiro basta colocarmos Number.parseInt, caso queira converter para numeros reais colocamos Number.parseFloat (parse= converter)*/
+    </script>
+</body>
+</html>
